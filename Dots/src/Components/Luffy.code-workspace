@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../semester/Projects/Calculator_react"
+		},
+		{
+			"path": "../../../../semester/Projects/Dots_react/connect-4"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Calculator_react"
+	}
+}
