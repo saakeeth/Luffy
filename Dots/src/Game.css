@@ -1,0 +1,156 @@
+body{
+    background-color: cornflowerblue;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    background-color: lightgoldenrodyellow;
+    border:5px solid burlywood;
+    position:absolute;
+    -webkit-box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+    z-index: 1;
+}
+.header{
+    position:absolute;
+    left:25%;
+    top:-85px;
+    height:80px;
+    width:250px;
+}
+.header-text{
+    font-size: xx-large;
+    position: absolute; 
+    font-weight: bold;
+    top:25%;
+    left:12%; 
+}
+.footer{
+    left:25%;
+    top:98%;
+    height:80px;
+    width:250px;
+}
+.footer button{
+    position:relative;
+    border:5px solid chocolate;
+    left:10%;
+    top:20%;
+    -webkit-box-shadow: 5px 2px 12px 1px rgba(0,0,0,0.9);
+    box-shadow: 5px 2px 12px 1px rgba(0,0,0,0.9);
+    cursor:pointer;
+    width:200px;
+    height:50px;
+    background-color: skyblue;
+} 
+.footer-text{
+        font-size: x-large;
+        position: absolute; 
+        font-weight: bold;
+        top:25%;
+        left:15%; 
+}
+.GameBoard{
+    display:grid;
+    grid-template-columns:repeat(4,1fr); 
+    grid-template-rows:repeat(4,1fr);
+    width:500px;
+    position:absolute;
+    left:30%;
+    top:15%;
+    background-color: bisque;
+    border:10px solid burlywood;
+    padding:15px;
+    border-radius: 8%;
+    -webkit-box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+}
+.GameCircle{
+ height:100px;
+ width:100px;
+ margin:4px ; 
+ border-radius:50%;
+ border:5px solid black
+}
+.player0{
+    background-color: white;
+}
+.player1{
+    background-color: red;
+}
+.player2{
+    background-color: blue;
+}
+
+@media (max-width: 900px) {
+    .GameBoard {
+            width: 450px;
+            height: 450px;
+            left:15%;
+        }
+    .GameCircle{
+        width:90px;
+        height:90px;
+    }
+    .header{
+        width: 150px;
+        height: 50px;
+        left:30%;
+        top:-15%;
+    }
+    .header-text{
+        font-size: small;
+        left:10%
+    }
+    .footer{
+        width: 130px;
+        height: 40px;
+        top:95%;
+    }
+    .footer button{
+        width: 100px;
+        height: 25px;
+        position:absolute;
+    }
+    .footer-text{
+        font-size: 10px;
+    }
+    }
+
+@media (max-width: 768px) {
+.GameBoard {
+        max-width: 300px;
+        max-height: 300px;
+        left:15%;
+    }
+.GameCircle{
+    max-width:50px;
+    max-height:50px;
+}
+.header{
+    width: 130px;
+    height: 40px;
+    top:-15%
+}
+.header-text{
+    font-size: small;
+    left:10%
+}
+.footer{
+    width: 130px;
+    height: 40px;
+    top:95%;
+}
+.footer button{
+    width: 100px;
+    height: 25px;
+    position:absolute;
+}
+.footer-text{
+    font-size: 10px;
+}
+}
